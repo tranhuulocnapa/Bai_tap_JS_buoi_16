@@ -1,0 +1,98 @@
+/* Reset mặc định */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Toàn trang */
+body {
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 10px auto 0;
+    background: #2c3e50;
+    border-radius: 2px;
+}
+
+
+h2 {
+    margin-bottom: 10px;
+    color: #34495e;
+    font-size: 18px;
+}
+
+/* Khung từng bài tập */
+div {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Input */
+input[type="number"] {
+    padding: 8px;
+    width: 200px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.6);
+}
+
+/* Nút bấm */
+button {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-top: 8px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Kết quả hiển thị */
+div>div {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #27ae60
+}
